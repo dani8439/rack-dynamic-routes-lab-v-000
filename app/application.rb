@@ -10,9 +10,9 @@ class Application
       item = @@items.find{|i| i.name == item_name}
 
       resp.write item.price
-    else 
+    else
       resp.write "Route not found"
-      resp.status = 404
+      resp.status = 400
     end
 
     resp.finish
