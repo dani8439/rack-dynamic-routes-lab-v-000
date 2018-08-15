@@ -5,5 +5,9 @@ class Application
     resp = Rack::Response.new 
     req = Rack::Request.new(env)
 
-    
+    if req.path.match(//)
+    end 
+
+    resp.finish 
+  end
 end
